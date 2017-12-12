@@ -17,6 +17,8 @@ browser.get(url)
 # 等待一定时间，让js脚本加载完毕
 browser.implicitly_wait(3)
 
+browser.maximize_window()
+
 #输入用户名
 username = browser.find_element_by_name('loginName')
 username.send_keys('mj')
@@ -36,5 +38,7 @@ browser.find_element_by_class_name('form-signin').submit()
 browser.save_screenshot('picture1.png')
 #打印网页源代码
 print(browser.page_source.encode('utf-8').decode())
+
+print(browser.get_cookies())
 
 browser.quit()
