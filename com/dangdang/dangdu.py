@@ -9,5 +9,5 @@ headers = {
 payload = {"bookId":82607}
 rows = int(10)
 for i in range(0, rows):
-    r = requests.get("http://dangdu.dangdang.com/book/click/ajaxBookClick.shtml",payload,headers = headers)
+    r = requests.get("http://dangdu.dangdang.com/book/click/ajaxBookClick.shtml",params=payload,headers = headers)
     print(r.text)
