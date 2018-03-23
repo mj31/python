@@ -7,7 +7,7 @@ def test(x):
         print("等于10")
 a = test(20)
 
-def study(**arge):
+def study(*arg,**arge):
     if arge["name"]=="张三":
         print("我的名字是张珊")
     elif arge["age"] == 20:

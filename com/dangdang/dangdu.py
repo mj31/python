@@ -7,7 +7,7 @@ headers = {
     'Host':'dangdu.dangdang.com',
 }
 payload = {"bookId":82607}
-rows = int(10)
+rows = int(1000)
 for i in range(0, rows):
     r = requests.get("http://dangdu.dangdang.com/book/click/ajaxBookClick.shtml",params=payload,headers = headers)
     print(r.text)
