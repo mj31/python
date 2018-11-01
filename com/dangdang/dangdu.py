@@ -6,7 +6,7 @@ headers = {
     'Accept':'application/javascript, */*;q=0.8',
     'Host':'dangdu.dangdang.com',
 }
-payload = {"bookId":82607}
+payload = {"bookId":105813}
 rows = int(1000)
 for i in range(0, rows):
     r = requests.get("http://dangdu.dangdang.com/book/click/ajaxBookClick.shtml",params=payload,headers = headers)
